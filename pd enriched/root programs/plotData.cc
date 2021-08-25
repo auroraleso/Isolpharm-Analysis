@@ -22,7 +22,7 @@ using namespace std;
 
 void plot()
 {   
-    string name="575bq.txt";
+    string name="342bq.txt";
     ifstream f;
     vector<double> x, y, ex, ey;
 
@@ -45,7 +45,7 @@ void plot()
  auto graph = new TGraphErrors(x.size(), &x[0], &y[0],&ex[0],&ey[0]);
  TF1 *f1 = new TF1("f1","pol0+expo(1)",3,100);
  graph->Fit(f1,"RB");
- TCanvas* c5 = new TCanvas("c5", "Pd-enriched,  Activity 575 peak versus time for HPGe",
+ TCanvas* c5 = new TCanvas("c5", "Pd-enriched,  Activity 342 peak versus time for HPGe",
                              27, 50, 1020, 760);
     
     
@@ -59,7 +59,7 @@ void plot()
     mg3->Draw("APE4");
 
     std::cout<<"zero projection "<<f1->Eval(0)<<std::endl;
-    mg3->SetTitle("Pd-enriched,  Activity 575 peak versus time for HPGe");
+    mg3->SetTitle("Pd-enriched,  Activity 342 peak versus time for HPGe");
     mg3->GetYaxis()->SetTitle("Activity [Bq] ");
     mg3->GetXaxis()->SetTitle("T [hours] from irradiation ending");
 
