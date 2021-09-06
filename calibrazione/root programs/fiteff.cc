@@ -40,7 +40,7 @@ void eff() {
   TCanvas * c1 = new TCanvas("c1", "efficiency curve ", 27, 50, 1020, 760);
 
   //this will be used for the fit
-  TGraphErrors *g = new TGraphErrors("effHPGe2.txt");
+  TGraphErrors *g = new TGraphErrors("effLaBr2.txt");
   
 
 
@@ -49,7 +49,7 @@ void eff() {
   g->SetMarkerSize(0.9);
   g->SetMarkerColor(1);
 
-  g->SetTitle("Efficiency curve for HPGe");
+  g->SetTitle("Efficiency curve for LaBr");
   g->GetYaxis()->SetTitle("Efficiency ");
   g->GetXaxis()->SetTitle(" E (keV) ");
 
@@ -130,29 +130,9 @@ std::cout<<" val eff for 342: "<<f1->Eval(342)  <<"+-"<<f2->Eval(342)-f1->Eval(3
   std::cout<<" val eff for 575: "<<f1->Eval(575)  <<"+-"<<f2->Eval(575)-f1->Eval(575)<<endl;
   std::cout<<" val eff for 172: "<<f1->Eval(172)  <<"+-"<<f2->Eval(172)-f1->Eval(172)<<endl;
   
- /*TGraphErrors *grint = new TGraphErrors( g1->GetN());
-  int n = 0;
-
-  for (double i=20; i<1500; i+=1)
-  {
-        grint->SetPoint(n, i, 0);
-        n++;
-  }
-
-  // Compute Confidence Interval at 68.3%
-  (TVirtualFitter::GetFitter())->GetConfidenceIntervals(grint,0.683);
+ 
 
 
-  grint->SetLineColor(kRed);
-  //grint->SetFillStyle(3017);
-  grint->SetFillColorAlpha(kRed-7,0.4);
-  grint->Draw("3same");
-  grint->SetTitle("Efficiency curve for HPGe");
-  grint->GetYaxis()->SetTitle("Efficiency ");
-  grint->GetXaxis()->SetTitle(" E (keV) ");
-  g->SetMarkerStyle(20);
-  g->SetMarkerSize(0.7);
-  g->Draw("P");*/
 
   /*std::cout<<" val eff for 342: "<<f1->Eval(342)  <<"+-"<<grint->GetErrorY(342)<<endl;
   std::cout<<" val eff for 245: "<<f1->Eval(245)  <<"+-"<<grint->GetErrorY(245)<<endl;
@@ -167,7 +147,7 @@ std::cout<<" val eff for 342: "<<f1->Eval(342)  <<"+-"<<f2->Eval(342)-f1->Eval(3
   qui root in order to avoid crushes. (Idk wher's the problem).*/
 
   
-  /*TCanvas* c2 = new TCanvas("c2", "residuisalita",
+  TCanvas* c2 = new TCanvas("c2", "residuisalita",
                              27, 50, 1020, 760);
   TGraphErrors* gr = (TGraphErrors*)g->Clone("gres");
   gr->SetTitle("residui");
@@ -193,10 +173,10 @@ TF1 *zero = new TF1("zero", fitzero2, 36, 1500, 2);
    TMultiGraph* mg1 = new TMultiGraph();
     mg1->Add(gr);
     mg1->Draw("AP");
-    mg1->SetTitle("Residuals Efficiency HPGe");
+    mg1->SetTitle("Residuals Efficiency LaBr");
     mg1->GetYaxis()->SetTitle("Residuals ");
     mg1->GetXaxis()->SetTitle("Efficiency");
     zero->Draw("same");
-    //c1->SaveAs("ploteff.pdf");*/
+    //c1->SaveAs("ploteff.pdf");
   return;
 }

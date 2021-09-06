@@ -22,7 +22,7 @@ using namespace std;
 
 void plot()
 {   
-    string name="mcnpxbq.txt";
+    string name="342bq.txt";
     ifstream f;
     vector<double> x, y, ex, ey;
 
