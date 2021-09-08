@@ -40,7 +40,7 @@ void eff() {
   TCanvas * c1 = new TCanvas("c1", "efficiency curve ", 27, 50, 1020, 760);
 
   //this will be used for the fit
-  TGraphErrors *g = new TGraphErrors("effHPGe2.txt");
+  TGraphErrors *g = new TGraphErrors("effLaBr2.txt");
   
 
 
@@ -49,7 +49,7 @@ void eff() {
   g->SetMarkerSize(0.9);
   g->SetMarkerColor(1);
 
-  g->SetTitle("Efficiency curve for HPGe");
+  g->SetTitle("Efficiency curve for LaBr");
   g->GetYaxis()->SetTitle("Efficiency ");
   g->GetXaxis()->SetTitle(" E (keV) ");
 
@@ -173,7 +173,7 @@ TF1 *zero = new TF1("zero", fitzero2, 36, 1500, 2);
    TMultiGraph* mg1 = new TMultiGraph();
     mg1->Add(gr);
     mg1->Draw("AP");
-    mg1->SetTitle("Residuals Efficiency HPGe");
+    mg1->SetTitle("Residuals Efficiency LaBr3");
     mg1->GetYaxis()->SetTitle("Residuals ");
     mg1->GetXaxis()->SetTitle("E (keV)");
     zero->Draw("same");
