@@ -80,7 +80,7 @@ void act()
     mg3->Draw("AP");
     mg3->SetTitle("Pd-enriched,  HPGe detector, Ag111 Activity");
     mg3->GetYaxis()->SetTitle("Activity [Bq] ");
-    mg3->GetXaxis()->SetTitle("T [s] from irradiation ending");
+    mg3->GetXaxis()->SetTitle("T [h] from irradiation ending");
 
 
 TLegend *leg = new TLegend(0.1, 0.7, 0.3, 0.9);
