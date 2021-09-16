@@ -131,7 +131,7 @@ void multifit() {
             << std::endl;
 TMultiGraph* mg = new TMultiGraph();
     mg->Add(g);
-    mg->Add(g1);
+    //mg->Add(g1);
     mg->Add(g2);
     mg->Draw("ap");
     mg->SetTitle("Plot F vs Filtered Rate");
@@ -144,7 +144,7 @@ TMultiGraph* mg = new TMultiGraph();
     auto legend = new TLegend(0.1,0.7,0.48,0.9);
     //legend->SetHeader("","C"); // option "C" allows to center the header
     legend->AddEntry("f1","80.9979(11) keV","l");
-    legend->AddEntry("f2","302.8512(16) keV","l");
+    //legend->AddEntry("f2","302.8512(16) keV","l");
     legend->AddEntry("f3","356.0134(17) keV","l");
     legend->Draw();
 
