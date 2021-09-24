@@ -1,0 +1,7 @@
+/Users/auroraleso/Desktop/Isolpharm-Analysis/Pd-Enriched/Campione Pd-Enriched/CMakeFiles/install/local.dir
+/Users/auroraleso/Desktop/Isolpharm-Analysis/Pd-Enriched/Campione Pd-Enriched/CMakeFiles/rebuild_cache.dir
+/Users/auroraleso/Desktop/Isolpharm-Analysis/Pd-Enriched/Campione Pd-Enriched/CMakeFiles/edit_cache.dir
+/Users/auroraleso/Desktop/Isolpharm-Analysis/Pd-Enriched/Campione Pd-Enriched/CMakeFiles/install/strip.dir
+/Users/auroraleso/Desktop/Isolpharm-Analysis/Pd-Enriched/Campione Pd-Enriched/CMakeFiles/install.dir
+/Users/auroraleso/Desktop/Isolpharm-Analysis/Pd-Enriched/Campione Pd-Enriched/CMakeFiles/list_install_components.dir
+/Users/auroraleso/Desktop/Isolpharm-Analysis/Pd-Enriched/Campione Pd-Enriched/CMakeFiles/Analysis.dir

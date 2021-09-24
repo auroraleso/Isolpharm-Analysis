@@ -1,0 +1,54 @@
+RISOLUZIONE HPGE ERRORI OK
+
+FCN=118.35 FROM MIGRAD    STATUS=CONVERGED      73 CALLS          74 TOTAL
+                     EDM=3.31209e-08    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  parametro lineare   1.78762e+00   1.91253e-03   8.60032e-06  -1.39497e-01
+   2  correzione   4.96856e-02   2.66138e-04   1.19676e-06  -1.00945e+00
+
+Parametri retta 1.78762 +- 0.001912530.0496856 +- 0.000266138
+ FCN=118.35 FROM MIGRAD    STATUS=CONVERGED      26 CALLS          27 TOTAL
+                     EDM=6.8122e-13    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  parametro lineare   1.78762e+00   1.91253e-03   8.60031e-06   3.55159e-04
+   2  correzione   4.96856e-02   2.66138e-04   1.19678e-06  -2.44892e-03
+
+COVARIANCE MATRIX :
+
+2x2 matrix is as follows
+
+     |      0    |      1    |
+-------------------------------
+   0 |  3.658e-06  -2.738e-07
+   1 | -2.738e-07   7.083e-08
+
+_____________________________________________________________________________________
+   RISOLUZIONE LABR3 CON ERRORI 
+
+
+
+    FCN=2304.27 FROM MIGRAD    STATUS=CONVERGED      92 CALLS          93 TOTAL
+                     EDM=7.03505e-09    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  parametro lineare   1.04390e+01   5.78569e-02   7.69784e-04   8.81630e-04
+   2  correzione   2.28512e+00   1.26096e-03   1.67776e-05  -5.79187e-02
+
+Parametri retta 10.439 +- 0.05785692.28512 +- 0.00126096
+ FCN=2304.27 FROM MIGRAD    STATUS=CONVERGED      25 CALLS          26 TOTAL
+                     EDM=1.08507e-09    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  parametro lineare   1.04390e+01   5.78569e-02   7.69808e-04   1.40393e-03
+   2  correzione   2.28512e+00   1.26096e-03   1.67776e-05   4.77186e-02
+
+COVARIANCE MATRIX :
+
+2x2 matrix is as follows
+
+     |      0    |      1    |
+-------------------------------
+   0 |   0.003347  -6.007e-05
+   1 | -6.007e-05    1.59e-06
